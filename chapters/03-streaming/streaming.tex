@@ -3,7 +3,9 @@
 \chapter{Measuring and Modeling Reliable Video Streaming}
 \label{chap:streaming}
 
-The Web would not have seen that big an increase in traffic if it were not for the tight integration of video streaming into every browser. Most forms of today's Web-based video delivery take advantage of \gls{HTTP} and \gls{TCP} to transport video. This is a completely different approach to what was used and was traditionally understood as video streaming in the past.
+The Web would not have seen that big an increase in traffic if it were not for the tight integration of video streaming into every browser. 
+% Hmm, hardly true for 1991.
+Most forms of today's Web-based video delivery take advantage of \gls{HTTP} and \gls{TCP} to transport video. This is a completely different approach to what was used and was traditionally understood as video streaming in the past.
 
 Streaming itself can be conducted in many ways, resulting in an ever-increasing number of protocols. Furthermore, the current boom in smartphones creates an increasing plurality of access network technologies. Each of them exhibits characteristic \gls{QoS} properties. These are typically:
 
@@ -11,6 +13,7 @@ Streaming itself can be conducted in many ways, resulting in an ever-increasing 
 	\item The \textit{bandwidth}, or the maximum throughput a user can achieve, which is always limited by at least one link, serving as the bottleneck. In most cases this will be the access link, but can also be any other link in times of high load. Bandwidth on an access medium can also be shared between all of its participants as is the case with any radio technology or cable Internet access.
 
 	\item The \textit{delay} is the time data travels between a sender and a recipient. The term \textit{jitter} is used  for the delay variation and occurs, for example, when successive packets travel on different routes or through different radio receivers during mobility events.
+% Nicht zu vergessen Puffer und resultierende (möglicherweise bloatige) Effekte
 
 	\item \textit{Loss} occurs when data packets do not reach the target. One source of loss can be an imperfect physical medium that flips some bits in a data packet. The responsible higher protocol layer will recognize this and drop the packet or repeat the request.
 \end{itemize}
